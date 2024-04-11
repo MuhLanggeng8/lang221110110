@@ -1,0 +1,111 @@
+        body {
+            background-color: white;
+            color: black;
+        }
+
+        .navbar {
+            background-color: black ;
+        }
+
+        .navbar-brand {
+            color: white;
+        }
+
+        .nav-link {
+            color: white ;
+        }
+
+        .jumbotron {
+            font-family: 'Montserrat', sans-serif;
+            background-image: url('Assets/background.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            color: white; 
+            padding: 100px 0; 
+            text-align: center; 
+        }
+
+        .jumbotron h1, .jumbotron p {
+            text-shadow:
+            -1px -1px 0 black,  
+            1px -1px 0 black,
+            -1px 1px 0 black,
+            1px 1px 0 black; 
+        }
+
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+
+        .portfolio-item img {
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .portfolio-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .portfolio-overlay h5 {
+            font-size: 25px;
+            margin-bottom: 15px;
+            text-shadow:
+            -1px -1px 0 white,  
+            1px -1px 0 white,
+            -1px 1px 0 white,
+            1px 1px 0 white;
+        }
+
+        .portfolio-overlay p {
+            font-size: 18px;
+            text-shadow:
+            -1px -1px 0 white,  
+            1px -1px 0 white,
+            -1px 1px 0 white,
+            1px 1px 0 white;
+        }
+
+        .contact-form {
+            background-color: white;
+            padding: 40px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgb(0, 0, 0);
+        }
+
+        .btn-primary {
+            background-color: black ;
+            border-color: black ;
+        }
+
+        .btn-primary:hover {
+            background-color: black ;
+            border-color: black ;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 20px 0;
+        }
+
+        @keyframes progressAnimation {
+           0% {
+               width: 0%;
+           }
+           100% {
+               width: var(--progress);
+           }
+        }
+
+        .progress-bar {
+             animation: progressAnimation 1.5s ease-out forwards;
+        }
